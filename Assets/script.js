@@ -18,14 +18,14 @@ function writePassword() {
     prompt("Number is too low or too high. Pick a number between 8 and 20");
   }
   alert("You Password will have " + Length + " Characters in it");
-  
+
   // Confirm Creteria
   var CLetters = confirm("Would you like lower case letters in your password?")
   var CCapLetters = confirm("Would you like lower Capital letters in your password?")
   var CNumbers = confirm("Would you like lower Numbers in your password?")
   var CS_Char = confirm("Would you like lower Special Characters in your password?")
   while (!CLetters && !CCapLetters && !CNumbers && !CS_Char) {
-    prompt("Choose at least ONE Creteria to generate a password");
+    alert("Choose at least ONE Creteria to generate a password");
     return;
   }
 
